@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+     name: pv1-elasticsearch
+spec:
+   storageClassName: 
+   accessModes:
+      - ReadWriteOnce
+   capacity:
+         storage: 10Gi
+   hostPath:
+        path: /elastic-search-1
